@@ -1,1 +1,10 @@
-<h1>test</h1>
+<h1>test</h1><br />
+<button onclick="click()">klik</button>
+
+<script>
+function click() {
+event.preventDefault();
+event.stopPropagating();
+window.opener.postMessage({data: "keepMeAlive"}, "*");
+}
+</script>
