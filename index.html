@@ -10,6 +10,6 @@ function click() {
 //event.preventDefault();
 //event.stopPropagating();
 console.log("click");
-window.postMessage({data: "keepMeAlive"}, "*");
+window.opener.postMessage({data: "keepMeAlive"}, "*");
 }
 </script>
